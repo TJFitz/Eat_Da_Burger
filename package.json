@@ -1,0 +1,26 @@
+{
+  "name": "eat_da_burger",
+  "version": "1.0.0",
+  "description": "Making use of handlebars, mySQL, and express for a fun interactive webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TJFitz/Eat_Da_Burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TJFitz/Eat_Da_Burger/issues"
+  },
+  "homepage": "https://github.com/TJFitz/Eat_Da_Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4"
+  }
+}

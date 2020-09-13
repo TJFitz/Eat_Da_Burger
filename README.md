@@ -2,9 +2,9 @@
 
 ###
 
-![]()
+![](https://github.com/TJFitz/Eat_Da_Burger/blob/master/images/eat_da_burger.png)
 
-deployed app: https://eat-da-borgar.herokuapp.com/
+deployed app: https://hidden-shelf-21758.herokuapp.com/
 
 <br>
 

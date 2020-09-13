@@ -1,0 +1,65 @@
+<div class="row centerThis">
+    <!-- borgars -->
+    <div class="col-lg-4 mx-auto">
+        <div class="card">
+            <ul class="list-group list-group-flush">
+                {{#each burgers}}
+                {{#unless devoured}}
+
+                <li data-id="{{this.id}}" data-devoured="{{this.devoured}}" class="list-group-item">
+
+                    <h3>{{this.burger_name}}</h3>
+
+                    <form data-id="{{this.id}}" data-devoured="{{this.devoured}}">
+
+                        <button type="button" data-devoured="{{this.devoured}}" data-id="{{this.id}}"
+                            class="devourbtn float btn btn-primary w-40">
+                            Devour it!
+                        </button>
+
+
+                    </form>
+                    <button data-id="{{this.id}}" class="removebtn float btn btn-danger w-40">
+                        <span>Yuck! </span><span class="fas fa-times-circle"></span>
+                    </button>
+                </li>
+
+                {{/unless}}
+                {{/each}}
+
+            </ul>
+        </div>
+    </div>
+    {{!-- spacer --}}
+    <div class="col-lg-3"></div>
+    <!-- more borgar please -->
+    <div class="col-lg-4 mx-auto">
+        <div class="card">
+            <ul class="list-group list-group-flush">
+                {{#each burgers}}
+                {{#if devoured}}
+
+                <li data-id="{{this.id}}" data-devoured="{{this.devoured}}" class="list-group-item">
+
+                    <h3>{{this.burger_name}}</h3>
+
+                    <form data-id="{{this.id}}" data-devoured="{{this.devoured}}">
+
+                        <button type="button" data-devoured="{{this.devoured}}" data-id="{{this.id}}"
+                            class="devourbtn float btn btn-primary w-40">
+                            Another Please!
+                        </button>
+
+                    </form>
+
+                    <button data-id="{{this.id}}" class="removebtn float btn btn-danger w-40">
+                        <span>Yuck! </span><span class="fas fa-times-circle"></span>
+                    </button>
+                </li>
+
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

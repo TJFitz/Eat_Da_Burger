@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Eat Da Burger!</title>
+</head>
+
+<body>
+    <main class="container-fluid">
+        <!-- jumbotron row -->
+        <div class="row">
+            <div class="col-xl-12 jumbotron text-center">
+                <h1>Eat Da Burger</h1>
+            </div>
+        </div>
+
+        <!-- main content row -->
+        <div class="row">
+            <div id="mainCol" class="col-lg-10 mx-auto bg-dark">
+                <!-- input sub row -->
+                <div class="row centerThis">
+                    <!-- input -->
+                    <div class="col-lg-3 mx-auto">
+
+                        <form class="newBurger">
+                            <input id="name" type="text" class="form-control mb-2 mr-sm-2 mx-auto"
+                                placeholder="Enter your burger here!" />
+                            <button type="submit" class="btn btn-primary w-100">
+                                Submit
+                            </button>
+
+                        </form>
+
+                    </div>
+                </div>
+                <!-- borgar sub row -->
+                <!-- this is where the handlebars begin -->
+                {{{body}}}
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

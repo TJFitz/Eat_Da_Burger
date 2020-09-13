@@ -1,0 +1,18 @@
+#mainCol {
+  min-height: 65vh;
+  border-radius: 1%;
+}
+
+.centerThis {
+  margin-top: 3vh;
+  align-items: center;
+}
+
+.float {
+  float: right;
+}
+
+li h3 {
+  float: left;
+  max-width: 65%;
+}
